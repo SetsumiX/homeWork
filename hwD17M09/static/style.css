@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(80, 114, 80);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(209, 255, 255);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.generator{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button_gen{
+    font-size: 25px;
+}
+
+#password{
+    font-size: 25px;
+    margin-top: 20px;
+}
