@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертор валюты</title>
+  <link rel="stylesheet" href="./static/style.css">
+  <script src="./static/script.js" defer></script>
+</head>
+  <body>
+    <h1>Введите сумму(в рублях), которую хотите конвертировать.</h1>
+
+    <form>
+        {% if error %}
+          <div class="error-message">
+            {{error}}
+          </div>
+        {% endif %}
+        <label for="rub">Рубли:</label>
+        <input type="text" id="rubInp" required>
+        <button type="button" id="conver">Конвертировать</button>
+      
+      <h2>Выберите валюты в которые хотите конвертировать.</h2>
+
+      <div class="usdBlock">
+        <label for="usd">Доллары:</label>
+        <input type="checkbox" name="usd" id="chbxUsd" checked>
+      </div>
+
+      <div class="euBlock">
+        <label for="eu">Евро:</label>
+        <input type="checkbox" name="eu" id="chbxEu" checked>
+      </div>
+
+      <div class="uahBlock">
+        <label for="uah">Гривны:</label>
+        <input type="checkbox" name="uah" id="chbxUah" checked>
+      </div>
+
+      <div class="jpyBlock">
+        <label for="jpy">Йены:</label>
+        <input type="checkbox" name="jpy" id="chbxJpy" checked>
+      </div>
+
+      <div class="cnyBlick">
+        <label for="cny">Юани:</label>
+        <input type="checkbox" name="cny" id="chbxCny" checked>
+      </div>
+    </form>
+    <h3>Результаты конвертации:</h3>
+    <div id="resultRow">
+    </div>
+  </body>
+</html>
